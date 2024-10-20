@@ -2,6 +2,7 @@
     "name": "mateo/rtch",
     "description": "Real Time CHAT Laravel/Pusher",
     "type": "package",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Mateo\\Rtch\\": "src/"
