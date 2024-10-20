@@ -3,6 +3,10 @@
     "description": "Real Time CHAT Laravel/Pusher",
     "type": "package",
     "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0 || ^10.0 || ^11.0"
+    },
     "autoload": {
         "psr-4": {
             "Mateo\\Rtch\\": "src/"
@@ -12,16 +16,15 @@
         "laravel":{
             "providers": [
                 "Mateo\\Rtch\\ChatServiceProvider"
-            ]
-            
+            ]   
         }
     },
     "authors": [
         {
-            "name": "mateo",
+            "name": "Mateo Demirlika",
             "email": "mateodemirlika@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
-    
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
