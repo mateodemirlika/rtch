@@ -40,6 +40,8 @@ php artisan vendor:publish --tag=views
 php artisan vendor:publish --tag=routes
 php artisan vendor:publish --tag=controllers
 php artisan vendor:publish --tag=events
+php artisan vendor:publish --tag=resources
+
 ```
 
 ### Routes web.php

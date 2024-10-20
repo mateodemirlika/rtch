@@ -16,7 +16,9 @@ class ChatServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__.'/views/rtch', 'rtch');
-        // Publish views
+        $this->publishes([
+            __DIR__.'/resources/app.css' => resource_path('resources/css/app.css'),
+        ], 'resources');
         $this->publishes([
             __DIR__.'/views/rtch' => resource_path('views/rtch'),
         ], 'views');
