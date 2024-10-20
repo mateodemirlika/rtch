@@ -21,13 +21,13 @@
 
 ```
 
--   Open your project
+- Open your project
 
 ```sh
 cd config/app.php
 ```
 
--   register provider below in 'providers' section
+- register provider below in 'providers' section
 
 ```sh
 Mateo\Rtch\ChatServiceProvider::class
@@ -45,7 +45,7 @@ php artisan vendor:publish --tag=events
 ### Routes web.php
 
 ```sh
-Route::get('/',[PusherController::class,'index']);
-Route::post('/broadcast',[PusherController::class,'broadcast']);
-Route::post('/receive',[PusherController::class,'receive']);
+Route::get('/rtch',[PusherController::class,'index'])->name('rtch');
+Route::post('/rtch/broadcast',[PusherController::class,'broadcast'])->name('rtch.broadcast');
+Route::post('/rtch/receive',[PusherController::class,'receive'])->name('rtch.receive');
 ```
