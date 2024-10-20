@@ -1,0 +1,25 @@
+{
+    "name": "mateo/rtch",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Mateo\\Rtch\\": "src/"
+        }
+    },
+    "extra" :{
+        "laravel":{
+            "providers": [
+                "Mateo\\Rtch\\ChatServiceProvider"
+            ]
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "mateo",
+            "email": "mateodemirlika@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+    
+}
