@@ -1,5 +1,6 @@
 {
     "name": "mateo/rtch",
+    "description": "Real Time CHAT Laravel/Pusher",
     "type": "package",
     "autoload": {
         "psr-4": {
